@@ -1,0 +1,28 @@
+{
+  "name": "win95-portfolio",
+  "version": "1.0.0",
+  "description": "Static vanilla HTML5/CSS3/ES6+ portfolio homepage styled as an interactive Windows 95 desktop.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint js/**/*.js"
+  },
+  "keywords": [
+    "portfolio",
+    "vanilla-js",
+    "html5",
+    "css3",
+    "es6",
+    "windows-95"
+  ],
+  "author": "Mohammed Sameer Sarfaraz Bake",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3"
+  }
+}

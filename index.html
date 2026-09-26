@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Sameer Sarfaraz Bake | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio homepage styled as a Windows 95 desktop, featuring draggable windows, a taskbar, and a Start Menu built entirely with vanilla HTML, CSS and JavaScript."
+    />
+    <meta name="author" content="Mohammed Sameer Sarfaraz Bake" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="desktop" id="desktop">
+      <div class="desktop__icons">
+        <button type="button" class="desktop-icon" data-opens="window-my-computer">
+          <span class="desktop-icon__glyph" aria-hidden="true">🖥️</span>
+          <span class="desktop-icon__label">My Computer</span>
+        </button>
+        <button type="button" class="desktop-icon" data-opens="window-about">
+          <span class="desktop-icon__glyph" aria-hidden="true">📄</span>
+          <span class="desktop-icon__label">Resume.txt</span>
+        </button>
+        <button type="button" class="desktop-icon" data-opens="window-projects">
+          <span class="desktop-icon__glyph" aria-hidden="true">📁</span>
+          <span class="desktop-icon__label">Projects</span>
+        </button>
+        <button type="button" class="desktop-icon" data-opens="window-contact">
+          <span class="desktop-icon__glyph" aria-hidden="true">✉️</span>
+          <span class="desktop-icon__label">Contact.exe</span>
+        </button>
+        <button type="button" class="desktop-icon" data-opens="window-recycle">
+          <span class="desktop-icon__glyph" aria-hidden="true">🗑️</span>
+          <span class="desktop-icon__label">Recycle Bin</span>
+        </button>
+
+        <!-- Windows: hidden by default, opened via icons or Start Menu -->
+
+        <section class="win-window bevel-out" id="window-my-computer" hidden style="top: 40px; left: 40px;">
+          <header class="win-window__titlebar">
+            <span class="win-window__title">🖥️ My Computer</span>
+            <span class="win-window__controls">
+              <button type="button" class="win-window__control bevel-out" aria-label="Minimize">_</button>
+              <button type="button" class="win-window__control bevel-out" aria-label="Maximize">□</button>
+              <button type="button" class="win-window__control bevel-out" data-action="close" aria-label="Close">✕</button>
+            </span>
+          </header>
+          <div class="win-window__body"></div>
+        </section>
+
+        <section class="win-window bevel-out" id="window-about" hidden style="top: 70px; left: 110px;">
+          <header class="win-window__titlebar">
+            <span class="win-window__title">📄 Resume.txt — Notepad</span>
+            <span class="win-window__controls">
+              <button type="button" class="win-window__control bevel-out" aria-label="Minimize">_</button>
+              <button type="button" class="win-window__control bevel-out" aria-label="Maximize">□</button>
+              <button type="button" class="win-window__control bevel-out" data-action="close" aria-label="Close">✕</button>
+            </span>
+          </header>
+          <div class="win-window__body"></div>
+        </section>
+
+        <section class="win-window bevel-out" id="window-projects" hidden style="top: 100px; left: 180px;">
+          <header class="win-window__titlebar">
+            <span class="win-window__title">📁 Projects</span>
+            <span class="win-window__controls">
+              <button type="button" class="win-window__control bevel-out" aria-label="Minimize">_</button>
+              <button type="button" class="win-window__control bevel-out" aria-label="Maximize">□</button>
+              <button type="button" class="win-window__control bevel-out" data-action="close" aria-label="Close">✕</button>
+            </span>
+          </header>
+          <div class="win-window__body"></div>
+        </section>
+
+        <section class="win-window bevel-out" id="window-contact" hidden style="top: 130px; left: 250px;">
+          <header class="win-window__titlebar">
+            <span class="win-window__title">✉️ Contact.exe</span>
+            <span class="win-window__controls">
+              <button type="button" class="win-window__control bevel-out" aria-label="Minimize">_</button>
+              <button type="button" class="win-window__control bevel-out" aria-label="Maximize">□</button>
+              <button type="button" class="win-window__control bevel-out" data-action="close" aria-label="Close">✕</button>
+            </span>
+          </header>
+          <div class="win-window__body"></div>
+        </section>
+
+        <section class="win-window bevel-out" id="window-recycle" hidden style="top: 160px; left: 320px;">
+          <header class="win-window__titlebar">
+            <span class="win-window__title">🗑️ Recycle Bin</span>
+            <span class="win-window__controls">
+              <button type="button" class="win-window__control bevel-out" aria-label="Minimize">_</button>
+              <button type="button" class="win-window__control bevel-out" aria-label="Maximize">□</button>
+              <button type="button" class="win-window__control bevel-out" data-action="close" aria-label="Close">✕</button>
+            </span>
+          </header>
+          <div class="win-window__body"></div>
+        </section>
+
+        <!-- Start Menu -->
+        <nav class="start-menu bevel-out" id="start-menu" hidden aria-label="Start Menu">
+          <div class="start-menu__sidebar" aria-hidden="true">Windows 95</div>
+          <ul class="start-menu__list">
+            <li><button type="button" class="start-menu__item" data-open-window="window-my-computer">🖥️ My Computer</button></li>
+            <li><button type="button" class="start-menu__item" data-open-window="window-about">📄 Resume.txt</button></li>
+            <li><button type="button" class="start-menu__item" data-open-window="window-projects">📁 Projects</button></li>
+            <li><button type="button" class="start-menu__item" data-open-window="window-contact">✉️ Contact.exe</button></li>
+            <li class="start-menu__divider" role="separator"></li>
+            <li><a class="start-menu__item" href="about.html">📄 About (plain page)</a></li>
+            <li><a class="start-menu__item" href="projects.html">📁 Projects (plain page)</a></li>
+            <li><a class="start-menu__item" href="contact.html">✉️ Contact (plain page)</a></li>
+            <li class="start-menu__divider" role="separator"></li>
+            <li><button type="button" class="start-menu__item" id="shutdown-trigger">🔌 Shut Down...</button></li>
+          </ul>
+        </nav>
+      </div>
+
+      <footer class="taskbar">
+        <button type="button" class="start-button bevel-out" id="start-button">
+          <span class="start-button__logo" aria-hidden="true">🪟</span>
+          <span>Start</span>
+        </button>
+        <ul class="taskbar__windows" id="taskbar-windows"></ul>
+        <span class="taskbar__clock bevel-in" id="taskbar-clock">--:-- --</span>
+      </footer>
+    </div>
+
+    <div class="shutdown-screen" id="shutdown-screen" hidden>
+      <p>It's now safe to close this tab.<br />(Click anywhere to turn the desktop back on.)</p>
+    </div>
+
+    <script type="module" src="./js/desktop.js"></script>
+  </body>
+</html>
