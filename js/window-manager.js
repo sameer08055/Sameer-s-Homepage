@@ -100,10 +100,18 @@ function createTaskbarButton(id, title, taskbarListEl) {
 export function registerWindow({ id, windowEl, taskbarListEl, title }) {
   const titlebar = windowEl.querySelector(".win-window__titlebar");
   const closeButton = windowEl.querySelector('[data-action="close"]');
+  const minimizeButton = windowEl.querySelector('[data-action="minimize"]');
+  const maximizeButton = windowEl.querySelector('[data-action="maximize"]');
 
   const taskbarButtonEl = createTaskbarButton(id, title, taskbarListEl);
 
-  state.windows.set(id, { el: windowEl, titlebarEl: titlebar, taskbarButtonEl });
+  state.windows.set(id, {
+    el: windowEl,
+    titlebarEl: titlebar,
+    taskbarButtonEl,
+    isMaximized: false,
+    restoreRect: null,
+  });
 
   makeDraggable(windowEl, titlebar);
 
@@ -113,6 +121,48 @@ export function registerWindow({ id, windowEl, taskbarListEl, title }) {
     windowEl.setAttribute("hidden", "");
   });
 
+  minimizeButton?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    windowEl.setAttribute("hidden", "");
+  });
+
+  maximizeButton?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    toggleMaximize(id);
+  });
+
+  bringToFront(id);
+}
+
+function toggleMaximize(id) {
+  const entry = state.windows.get(id);
+  if (!entry) {
+    return;
+  }
+  const { el } = entry;
+  const desktopEl = el.parentElement;
+
+  if (!entry.isMaximized) {
+    entry.restoreRect = {
+      top: el.style.top,
+      left: el.style.left,
+      width: el.style.width,
+      height: el.style.height,
+    };
+    const desktopRect = desktopEl.getBoundingClientRect();
+    el.style.top = "0px";
+    el.style.left = "0px";
+    el.style.width = `${desktopRect.width}px`;
+    el.style.height = `${desktopRect.height}px`;
+    entry.isMaximized = true;
+  } else {
+    const r = entry.restoreRect;
+    el.style.top = r.top || "80px";
+    el.style.left = r.left || "80px";
+    el.style.width = r.width || "";
+    el.style.height = r.height || "";
+    entry.isMaximized = false;
+  }
   bringToFront(id);
 }
 
