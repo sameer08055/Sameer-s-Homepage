@@ -6,7 +6,7 @@ Mohammed Sameer Sarfaraz Bake
 
 ## Class Link
 
-`<INSERT YOUR COURSE / CLASS LINK HERE>`
+CS5610.18490.202710
 
 ## Project Objective
 
@@ -20,12 +20,10 @@ live taskbar entry, a working Start Menu, a live clock, and a "Shut Down"
 easter egg — all built from scratch with ES6 modules, no UI libraries.
 
 ## Screenshot
-
-`<INSERT SCREENSHOT OF THE DEPLOYED HOMEPAGE HERE, e.g. ./images/screenshot.png>`
+<img width="2874" height="1562" alt="image" src="https://github.com/user-attachments/assets/a6fee2db-c03c-4923-b589-8073839d7e7b" />
 
 ## Live Site
-
-`<INSERT PUBLIC DEPLOYMENT URL HERE, e.g. GitHub Pages link>`
+https://sameer08055.github.io/personal-homepage/
 
 ## Project Structure
 
