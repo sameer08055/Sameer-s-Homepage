@@ -64,8 +64,8 @@ This is a static site with no build step required.
 
 1. Clone the repository:
    ```bash
-   git clone <YOUR_REPO_URL>
-   cd <YOUR_REPO_FOLDER>
+   git clone https://github.com/sameer08055/personal-homepage.git
+   cd personal-homepage
    ```
 2. Install dev dependencies (only needed for linting/formatting/local server):
    ```bash
@@ -89,7 +89,7 @@ Deployed as a static site (e.g. GitHub Pages). To deploy your own copy:
 1. Push this repository to GitHub.
 2. In the repo settings, enable GitHub Pages for the `main` branch (root
    folder).
-3. GitHub will publish the site at `https://<username>.github.io/<repo>/`.
+3. GitHub will publish the site at `https://sameer08055.github.io/personal-homepage/`.
 
 ## Use of GenAI Tools
 
