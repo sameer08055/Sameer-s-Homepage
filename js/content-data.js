@@ -3,7 +3,8 @@
 
 export const profile = {
   name: "Mohammed Sameer Sarfaraz Bake",
-  tagline: "AI Software Developer: building AI that (usually) does what I meant, not what I said.",
+  tagline:
+    "AI Software Developer: building AI that (usually) does what I meant, not what I said.",
   email: "bake.m@northeastern.edu",
   github: "https://github.com/sameer08055",
   linkedin: "https://www.linkedin.com/in/sameer-mohammed-a5475b284/",

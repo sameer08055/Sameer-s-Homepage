@@ -52,7 +52,6 @@ easter egg — all built from scratch with ES6 modules, no UI libraries.
 └── LICENSE                 # MIT License
 ```
 
-
 ## Instructions to Build / Run Locally
 
 This is a static site with no build step required.

@@ -25,6 +25,7 @@ addition to the desktop icons opening the content inline as windows.
 ## 2. User Personas
 
 ### Persona 1 — "Recruiter Rachel"
+
 - **Age:** 34
 - **Role:** Technical recruiter at a mid-size tech company
 - **Goals:** Quickly find a candidate's skills, project examples, and
@@ -37,6 +38,7 @@ addition to the desktop icons opening the content inline as windows.
   metaphor at all.
 
 ### Persona 2 — "Fellow Developer Dev"
+
 - **Age:** 26
 - **Role:** Front-end developer browsing portfolios for inspiration
 - **Goals:** See an original idea executed well — in this case, functioning
@@ -47,6 +49,7 @@ addition to the desktop icons opening the content inline as windows.
   static image of a desktop.
 
 ### Persona 3 — "Prospective Client Priya"
+
 - **Age:** 41
 - **Role:** Small business owner looking to hire a freelance developer
 - **Goals:** Understand what kind of work this developer can do and how to
@@ -83,6 +86,7 @@ addition to the desktop icons opening the content inline as windows.
 ## 4. Design Mockups (described)
 
 **Desktop (index.html)**
+
 ```
 --------------------------------------------------
 |  [My Computer]     [Resume]                     |
