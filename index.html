@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammed Sameer Sarfaraz Bake | Portfolio</title>
     <meta
       name="description"
       content="Portfolio homepage styled as a Windows 95 desktop, featuring draggable windows, a taskbar, and a Start Menu built entirely with vanilla HTML, CSS and JavaScript."
-    />
-    <meta name="author" content="Mohammed Sameer Sarfaraz Bake" />
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
-    <link rel="stylesheet" href="./css/style.css" />
+    >
+    <meta name="author" content="Mohammed Sameer Sarfaraz Bake">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="desktop" id="desktop">
@@ -39,6 +39,7 @@
         <!-- Windows: hidden by default, opened via icons or Start Menu -->
 
         <section class="win-window bevel-out" id="window-my-computer" hidden style="top: 40px; left: 40px;">
+          <h2 class="visually-hidden">My Computer</h2>
           <header class="win-window__titlebar">
             <span class="win-window__title">🖥️ My Computer</span>
             <span class="win-window__controls">
@@ -51,6 +52,7 @@
         </section>
 
         <section class="win-window bevel-out" id="window-about" hidden style="top: 70px; left: 110px;">
+          <h2 class="visually-hidden">Resume</h2>
           <header class="win-window__titlebar">
             <span class="win-window__title">📄 Resume.txt — Notepad</span>
             <span class="win-window__controls">
@@ -63,6 +65,7 @@
         </section>
 
         <section class="win-window bevel-out" id="window-projects" hidden style="top: 100px; left: 180px;">
+          <h2 class="visually-hidden">Projects</h2>
           <header class="win-window__titlebar">
             <span class="win-window__title">📁 Projects</span>
             <span class="win-window__controls">
@@ -75,6 +78,7 @@
         </section>
 
         <section class="win-window bevel-out" id="window-contact" hidden style="top: 130px; left: 250px;">
+          <h2 class="visually-hidden">Contact</h2>
           <header class="win-window__titlebar">
             <span class="win-window__title">✉️ Contact.exe</span>
             <span class="win-window__controls">
@@ -87,6 +91,7 @@
         </section>
 
         <section class="win-window bevel-out" id="window-recycle" hidden style="top: 160px; left: 320px;">
+          <h2 class="visually-hidden">Recycle Bin</h2>
           <header class="win-window__titlebar">
             <span class="win-window__title">🗑️ Recycle Bin</span>
             <span class="win-window__controls">
@@ -106,11 +111,11 @@
             <li><button type="button" class="start-menu__item" data-open-window="window-about">📄 Resume.txt</button></li>
             <li><button type="button" class="start-menu__item" data-open-window="window-projects">📁 Projects</button></li>
             <li><button type="button" class="start-menu__item" data-open-window="window-contact">✉️ Contact.exe</button></li>
-            <li class="start-menu__divider" role="separator"></li>
+            <li class="start-menu__divider" aria-hidden="true"></li>
             <li><a class="start-menu__item" href="about.html">📄 About (plain page)</a></li>
             <li><a class="start-menu__item" href="projects.html">📁 Projects (plain page)</a></li>
             <li><a class="start-menu__item" href="contact.html">✉️ Contact (plain page)</a></li>
-            <li class="start-menu__divider" role="separator"></li>
+            <li class="start-menu__divider" aria-hidden="true"></li>
             <li><button type="button" class="start-menu__item" id="shutdown-trigger">🔌 Shut Down...</button></li>
           </ul>
         </nav>
@@ -127,7 +132,7 @@
     </div>
 
     <div class="shutdown-screen" id="shutdown-screen" hidden>
-      <p>It's now safe to close this tab.<br />(Click anywhere to turn the desktop back on.)</p>
+      <p>It's now safe to close this tab.<br >(Click anywhere to turn the desktop back on.)</p>
     </div>
 
     <script type="module" src="./js/desktop.js"></script>
