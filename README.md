@@ -24,6 +24,14 @@ easter egg — all built from scratch with ES6 modules, no UI libraries.
 
 ## Live Site
 https://sameer08055.github.io/personal-homepage/
+## Pages
+
+This project includes four HTML pages, at four distinct URLs:
+
+index.html — the interactive Windows 95 desktop (homepage)
+about.html — plain fallback About page
+projects.html — plain fallback Projects page
+contact.html — plain fallback Contact page, and the AI-generated page for this assignment: its body copy was drafted by Claude (see "Use of GenAI Tools" below for the model, prompt, and disclosure)
 
 ## Project Structure
 
