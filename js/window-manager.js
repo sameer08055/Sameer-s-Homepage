@@ -140,7 +140,11 @@ function toggleMaximize(id) {
     return;
   }
   const { el } = entry;
-  const desktopEl = el.parentElement;
+  // Use offsetParent, not parentElement — offsetParent is whichever
+  // positioned ancestor CSS is actually using as the containing block for
+  // this absolutely-positioned window. Using parentElement here previously
+  // measured the wrong element and made maximize silently no-op.
+  const containerEl = el.offsetParent || el.parentElement;
 
   if (!entry.isMaximized) {
     entry.restoreRect = {
@@ -149,11 +153,12 @@ function toggleMaximize(id) {
       width: el.style.width,
       height: el.style.height,
     };
-    const desktopRect = desktopEl.getBoundingClientRect();
+    const containerRect = containerEl.getBoundingClientRect();
     el.style.top = "0px";
     el.style.left = "0px";
-    el.style.width = `${desktopRect.width}px`;
-    el.style.height = `${desktopRect.height}px`;
+    el.style.width = `${containerRect.width}px`;
+    el.style.height = `${containerRect.height}px`;
+    el.style.maxWidth = "none";
     entry.isMaximized = true;
   } else {
     const r = entry.restoreRect;
@@ -161,6 +166,7 @@ function toggleMaximize(id) {
     el.style.left = r.left || "80px";
     el.style.width = r.width || "";
     el.style.height = r.height || "";
+    el.style.maxWidth = "";
     entry.isMaximized = false;
   }
   bringToFront(id);
