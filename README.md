@@ -6,7 +6,7 @@ Mohammed Sameer Sarfaraz Bake
 
 ## Class Link
 
-`<INSERT YOUR COURSE / CLASS LINK HERE>`
+CS5610.18490.202710
 
 ## Project Objective
 
@@ -20,12 +20,18 @@ live taskbar entry, a working Start Menu, a live clock, and a "Shut Down"
 easter egg — all built from scratch with ES6 modules, no UI libraries.
 
 ## Screenshot
-
-`<INSERT SCREENSHOT OF THE DEPLOYED HOMEPAGE HERE, e.g. ./images/screenshot.png>`
+<img width="2874" height="1562" alt="image" src="https://github.com/user-attachments/assets/a6fee2db-c03c-4923-b589-8073839d7e7b" />
 
 ## Live Site
+https://sameer08055.github.io/personal-homepage/
+## Pages
 
-`<INSERT PUBLIC DEPLOYMENT URL HERE, e.g. GitHub Pages link>`
+This project includes four HTML pages, at four distinct URLs:
+
+index.html — the interactive Windows 95 desktop (homepage)
+about.html — plain fallback About page
+projects.html — plain fallback Projects page
+contact.html — plain fallback Contact page, and the AI-generated page for this assignment: its body copy was drafted by Claude (see "Use of GenAI Tools" below for the model, prompt, and disclosure)
 
 ## Project Structure
 
@@ -58,8 +64,8 @@ This is a static site with no build step required.
 
 1. Clone the repository:
    ```bash
-   git clone <YOUR_REPO_URL>
-   cd <YOUR_REPO_FOLDER>
+   git clone https://github.com/sameer08055/personal-homepage.git
+   cd personal-homepage
    ```
 2. Install dev dependencies (only needed for linting/formatting/local server):
    ```bash
@@ -83,7 +89,7 @@ Deployed as a static site (e.g. GitHub Pages). To deploy your own copy:
 1. Push this repository to GitHub.
 2. In the repo settings, enable GitHub Pages for the `main` branch (root
    folder).
-3. GitHub will publish the site at `https://<username>.github.io/<repo>/`.
+3. GitHub will publish the site at `https://sameer08055.github.io/personal-homepage/`.
 
 ## Use of GenAI Tools
 
