@@ -23,7 +23,7 @@ easter egg — all built from scratch with ES6 modules, no UI libraries.
 <img width="2874" height="1562" alt="image" src="https://github.com/user-attachments/assets/a6fee2db-c03c-4923-b589-8073839d7e7b" />
 
 ## Live Site
-https://sameer08055.github.io/personal-homepage/
+https://sameer08055.github.io/Sameer-s-Homepage/
 ## Pages
 
 This project includes four HTML pages, at four distinct URLs:
@@ -64,8 +64,8 @@ This is a static site with no build step required.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sameer08055/personal-homepage.git
-   cd personal-homepage
+   git clone https://github.com/sameer08055/sameer-s-homepage.git
+   cd sameer-s-homepage
    ```
 2. Install dev dependencies (only needed for linting/formatting/local server):
    ```bash
@@ -89,7 +89,7 @@ Deployed as a static site (e.g. GitHub Pages). To deploy your own copy:
 1. Push this repository to GitHub.
 2. In the repo settings, enable GitHub Pages for the `main` branch (root
    folder).
-3. GitHub will publish the site at `https://sameer08055.github.io/personal-homepage/`.
+3. GitHub will publish the site at `https://sameer08055.github.io/Sameer-s-Homepage/`.
 
 ## Use of GenAI Tools
 
