@@ -44,7 +44,7 @@ img {
 
 /* ---------------- Win95 "bevel" utility borders ---------------- */
 
-.bevel-out {
+.bevel-out { /* didn't realize this was a thing, I will be taking some inspiration from this */
   border-top: 2px solid var(--win-white);
   border-left: 2px solid var(--win-white);
   border-bottom: 2px solid var(--win-gray-darker);
@@ -70,7 +70,7 @@ img {
   min-height: 500px;
   overflow: hidden;
   background-color: var(--win-teal);
-  background-image: repeating-linear-gradient(
+  background-image: repeating-linear-gradient( /* I wondered how you did the background color gradient */
     45deg,
     rgba(255, 255, 255, 0.03) 0px,
     rgba(255, 255, 255, 0.03) 2px,

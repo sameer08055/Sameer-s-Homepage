@@ -28,7 +28,7 @@ function bringToFront(id) {
   state.activeId = id;
 }
 
-function makeDraggable(windowEl, handleEl) {
+function makeDraggable(windowEl, handleEl) { //this was probably the function I was the most curious about. Reminds me of an implementation of video game code. well done. 
   let isDragging = false;
   let offsetX = 0;
   let offsetY = 0;
@@ -225,7 +225,7 @@ export function initShutdown({ shutdownTriggerSelector, shutdownScreenSelector }
   });
 }
 
-export function initClock(clockSelector) {
+export function initClock(clockSelector) { // I was looking all over for the code for how you did the clock
   const clockEl = document.querySelector(clockSelector);
   if (!clockEl) {
     return;
@@ -235,7 +235,7 @@ export function initClock(clockSelector) {
     const now = new Date();
     let hours = now.getHours();
     const minutes = String(now.getMinutes()).padStart(2, "0");
-    const period = hours >= 12 ? "PM" : "AM";
+    const period = hours >= 12 ? "PM" : "AM"; // elegant syntax here
     hours = hours % 12;
     hours = hours === 0 ? 12 : hours;
     clockEl.textContent = `${hours}:${minutes} ${period}`;

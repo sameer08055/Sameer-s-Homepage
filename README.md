@@ -6,7 +6,7 @@ Mohammed Sameer Sarfaraz Bake
 
 ## Class Link
 
-CS5610.18490.202710
+CS5610.18490.202710 Link this https://johnguerra.co/classes/webDevelopment_online_fall_2026/
 
 ## Project Objective
 
