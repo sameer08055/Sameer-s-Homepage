@@ -88,7 +88,7 @@ function renderRecycleBinWindow() {
 
   [ ] off-by-one error (1)
   [ ] off-by-one error (2)
-  [x] the one bug that took 6 hours
+  [x] the one bug that took 6 hours // Lol
   [ ] "it works on my machine"
 </p>
   `;
